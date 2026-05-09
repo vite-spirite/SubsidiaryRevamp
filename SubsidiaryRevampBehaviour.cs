@@ -72,7 +72,7 @@ namespace SubsidiaryRevamp
         {
             try
             {
-                _elements = WindowManager.GenerateUI(ParentMod.LoadFullXMLFile("createSubsidiary.txt"), null, this);
+                _elements = WindowManager.GenerateUI(ParentMod.LoadFullXMLFile("ui/createSubsidiary.txt"), null, this);
             }
             catch
             {
@@ -162,6 +162,7 @@ namespace SubsidiaryRevamp
             }
 
             playerCompany.MakeTransaction(-budget, Company.TransactionCategory.Intercompany);
+            ((GUIWindow)_elements["window"]).Close();
         }
 
         private float GetCostMultiplier(CompanyType type)

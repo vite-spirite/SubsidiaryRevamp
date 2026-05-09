@@ -1,4 +1,4 @@
-﻿<Window MinSize="300,0" NonLocTitle="Create subsidiary">
+﻿<Window id="window" MinSize="300,0" NonLocTitle="Create subsidiary">
 	<ScrollView anchor="fill" position="4,4" size="-8,-8">
 		<VerticalLayout anchor="top" padding="8,8,8,8" spacing="6" childForceExpandHeight="False" childControlHeight="False">
 			<ContentFitter verticalFit="PreferredSize">
