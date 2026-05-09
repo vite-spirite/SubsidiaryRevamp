@@ -1,0 +1,17 @@
+﻿<Window MinSize="300,0" NonLocTitle="Create subsidiary">
+	<ScrollView anchor="fill" position="4,4" size="-8,-8">
+		<VerticalLayout anchor="top" padding="8,8,8,8" spacing="6" childForceExpandHeight="False" childControlHeight="False">
+			<ContentFitter verticalFit="PreferredSize">
+				<Label height="16">Company Name</Label>
+				<Input id="companyName" height="28"></Input>
+				<Label height="16">Initial Budget</Label>
+				<Slider id="budgetSlider" height="24"></Slider>
+				<Label height="16" id="selectedBudget"></Label>
+				<Label height="16">Specialization</Label>
+				<Combo id="SpecializationSelect" height="24"></Combo>
+				<Label id="errorLabel" color="FF0000" height="16"></Label>
+				<Button onClick="CreateSubsidiary()" height="32">Create</Button>
+			</ContentFitter>
+		</VerticalLayout>
+	</ScrollView>
+</Window>
